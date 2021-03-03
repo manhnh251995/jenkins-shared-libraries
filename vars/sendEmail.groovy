@@ -45,7 +45,7 @@ def call(RunWrapper currentBuild, List<String> emailList) {
             recipientProviders: [[$class: "RequesterRecipientProvider"]],
             to: emailList.join(", "),
             subject: "\$DEFAULT_SUBJECT",
-            body: "\$DEFAULT_CONTENT link git ManhNH : https://github.com/manhnh251995/testlib2.git "
+            body: "\$DEFAULT_CONTENT link git"
         )
     }
 }
