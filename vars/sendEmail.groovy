@@ -45,7 +45,7 @@ def call(RunWrapper currentBuild, List<String> emailList) {
             recipientProviders: [[$class: "RequesterRecipientProvider"]],
             to: emailList.join(", "),
             subject: "\$DEFAULT_SUBJECT",
-            body: "\$CONTEXT_MAIL_MANHNH"
+            body: "Check source code in \$CONTEXT_MAIL_MANHNH for detail"
         )
     }
 }
